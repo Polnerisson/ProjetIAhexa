@@ -1,0 +1,35 @@
+gazebo_ros_control:
+  pid_gains:
+    joint_buste_coxa_arriere_droite:  {p: 50, i: 0, d: 0}
+    joint_coxa_femur_arriere_droite:  {p: 50, i: 0, d: 0}
+    joint_femur_tibia_arriere_droite: {p: 50, i: 0, d: 0}
+    joint_tibia_tarse_arriere_droite: {p: 50, i: 0, d: 0}
+
+    joint_buste_coxa_milieu_droite:   {p: 50, i: 0, d: 0}
+    joint_coxa_femur_milieu_droite:   {p: 50, i: 0, d: 0}
+    joint_femur_tibia_milieu_droite:  {p: 50, i: 0, d: 0}
+    joint_tibia_tarse_milieu_droite:  {p: 50, i: 0, d: 0}
+
+    joint_buste_coxa_avant_droite:    {p: 50, i: 0, d: 0}
+    joint_coxa_femur_avant_droite:    {p: 50, i: 0, d: 0}
+    joint_femur_tibia_avant_droite:   {p: 50, i: 0, d: 0}
+    joint_tibia_tarse_avant_droite:   {p: 50, i: 0, d: 0}
+
+    joint_buste_coxa_arriere_gauche:  {p: 50, i: 0, d: 0}
+    joint_coxa_femur_arriere_gauche:  {p: 50, i: 0, d: 0}
+    joint_femur_tibia_arriere_gauche: {p: 50, i: 0, d: 0}
+    joint_tibia_tarse_arriere_gauche: {p: 50, i: 0, d: 0}
+
+    joint_buste_coxa_milieu_gauche:   {p: 50, i: 0, d: 0}
+    joint_coxa_femur_milieu_gauche:   {p: 50, i: 0, d: 0}
+    joint_femur_tibia_milieu_gauche:  {p: 50, i: 0, d: 0}
+    joint_tibia_tarse_milieu_gauche:  {p: 50, i: 0, d: 0}
+
+    joint_buste_coxa_avant_gauche:    {p: 50, i: 0, d: 0}
+    joint_coxa_femur_avant_gauche:    {p: 50, i: 0, d: 0}
+    joint_femur_tibia_avant_gauche:   {p: 50, i: 0, d: 0}
+    joint_tibia_tarse_avant_gauche:   {p: 50, i: 0, d: 0}
+
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 50

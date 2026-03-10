@@ -1,0 +1,2 @@
+[console_scripts]
+marche_hexapode = hexa_ai.marche_hexapode:main

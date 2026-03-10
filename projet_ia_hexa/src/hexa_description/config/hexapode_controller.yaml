@@ -1,0 +1,128 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    # PATTES DROITES
+    joint_buste_coxa_arriere_droite_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_buste_coxa_arriere_droite
+
+    joint_coxa_femur_arriere_droite_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_coxa_femur_arriere_droite
+
+    joint_femur_tibia_arriere_droite_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_femur_tibia_arriere_droite
+
+    joint_tibia_tarse_arriere_droite_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_tibia_tarse_arriere_droite
+
+    joint_buste_coxa_milieu_droite_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_buste_coxa_milieu_droite
+
+    joint_coxa_femur_milieu_droite_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_coxa_femur_milieu_droite
+
+    joint_femur_tibia_milieu_droite_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_femur_tibia_milieu_droite
+
+    joint_tibia_tarse_milieu_droite_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_tibia_tarse_milieu_droite
+
+    joint_buste_coxa_avant_droite_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_buste_coxa_avant_droite
+
+    joint_coxa_femur_avant_droite_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_coxa_femur_avant_droite
+
+    joint_femur_tibia_avant_droite_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_femur_tibia_avant_droite
+
+    joint_tibia_tarse_avant_droite_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_tibia_tarse_avant_droite
+
+    # PATTES GAUCHES
+    joint_buste_coxa_arriere_gauche_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_buste_coxa_arriere_gauche
+
+    joint_coxa_femur_arriere_gauche_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_coxa_femur_arriere_gauche
+
+    joint_femur_tibia_arriere_gauche_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_femur_tibia_arriere_gauche
+
+    joint_tibia_tarse_arriere_gauche_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_tibia_tarse_arriere_gauche
+
+    joint_buste_coxa_milieu_gauche_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_buste_coxa_milieu_gauche
+
+    joint_coxa_femur_milieu_gauche_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_coxa_femur_milieu_gauche
+
+    joint_femur_tibia_milieu_gauche_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_femur_tibia_milieu_gauche
+
+    joint_tibia_tarse_milieu_gauche_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_tibia_tarse_milieu_gauche
+
+    joint_buste_coxa_avant_gauche_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_buste_coxa_avant_gauche
+
+    joint_coxa_femur_avant_gauche_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_coxa_femur_avant_gauche
+
+    joint_femur_tibia_avant_gauche_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_femur_tibia_avant_gauche
+
+    joint_tibia_tarse_avant_gauche_position_controller:
+      type: position_controllers/JointPositionController
+      ros__parameters:
+        joint: joint_tibia_tarse_avant_gauche

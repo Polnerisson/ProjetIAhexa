@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="empty_world">
+
+    <!-- Lumière simple -->
+    <light name="sun" type="directional">
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>-0.5 0.5 -1</direction>
+    </light>
+
+    <!-- Sol avec couleur et grille -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <shader type="pixel"/>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Activer la grille de navigation (optionnel) -->
+    <scene>
+      <grid>true</grid>
+    </scene>
+
+  </world>
+</sdf> 
